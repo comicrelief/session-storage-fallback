@@ -1,4 +1,8 @@
-# session-storage-fallback
+Session Storage Fallback
+--------------
+
+[![semantic-release](https://badge.fury.io/js/%40comicrelief%session-storage-fallback.svg)](https://www.npmjs.com/package/@comicrelief/session-storage-fallback)
+
 Check and use appropriate storage adapter for browser (sessionStorage, cookies, memory)
 
 This repository was cloned from [github.com/ripeworks/local-storage-fallback](https://github.com/ripeworks/local-storage-fallback) due to a need to fallback from session storage rather than local storage.
@@ -14,7 +18,7 @@ $ npm install session-storage-fallback
 ```js
 import storage from 'session-storage-fallback' // if you use es6 or typescript
 // use object destructuring when using require()
-// const {storage} = require('local-storage-fallback')
+// const {storage} = require('session-storage-fallback')
 
 // Use storage directly
 storage.setItem('foo', 'bar');

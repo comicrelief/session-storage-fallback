@@ -1,7 +1,7 @@
 {
-  "name": "local-storage-fallback",
+  "name": "@comicrelief/session-storage-fallback",
   "version": "4.1.1",
-  "description": "Check and use appropriate storage adapter for browser (localStorage, sessionStorage, cookies, memory)",
+  "description": "Check and use appropriate storage adapter for browser (sessionStorage, cookies, memory)",
   "main": "lib/index.js",
   "typings": "index.d.ts",
   "files": [
@@ -16,17 +16,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ripeworks/local-storage-fallback.git"
+    "url": "git@github.com:comicrelief/session-storage-fallback.git"
   },
   "keywords": [
-    "localStorage"
+    "sessionStorage"
   ],
   "author": "Mike Kruk <mike@ripeworks.com> (http://ripeworks.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ripeworks/local-storage-fallback/issues"
+    "url": "https://github.com/comicrelief/session-storage-fallback/issues"
   },
-  "homepage": "https://github.com/ripeworks/local-storage-fallback#readme",
+  "homepage": "https://github.com/comicrelief/session-storage-fallback/issues#readme",
   "dependencies": {
     "cookie": "^0.3.1"
   },
