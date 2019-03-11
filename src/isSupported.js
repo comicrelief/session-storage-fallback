@@ -16,10 +16,6 @@ function hasStorage (name) {
 export default function isSupported (name = 'localStorage') {
   const storage = String(name).replace(/storage$/i, '').toLowerCase()
 
-  if (storage === 'local') {
-    return hasStorage('localStorage')
-  }
-
   if (storage === 'session') {
     return hasStorage('sessionStorage')
   }
@@ -33,5 +29,5 @@ export default function isSupported (name = 'localStorage') {
   }
 
   throw new Error(`Storage method \`${name}\` is not available.
-    Please use one of the following: localStorage, sessionStorage, cookieStorage, memoryStorage.`)
+    Please use one of the following: sessionStorage, cookieStorage, memoryStorage.`)
 }

@@ -1,18 +1,18 @@
-# local-storage-fallback
-Check and use appropriate storage adapter for browser (localStorage, sessionStorage, cookies, memory)
+# session-storage-fallback
+Check and use appropriate storage adapter for browser (sessionStorage, cookies, memory)
 
-[![npm version](https://badge.fury.io/js/local-storage-fallback.svg)](https://badge.fury.io/js/local-storage-fallback)
+This repository was cloned from [github.com/ripeworks/local-storage-fallback](https://github.com/ripeworks/local-storage-fallback) due to a need to fallback from session storage rather than local storage.
 
 ## Installation
 
 ```
-$ npm install local-storage-fallback
+$ npm install session-storage-fallback
 ```
 
 ## Usage
 
 ```js
-import storage from 'local-storage-fallback' // if you use es6 or typescript
+import storage from 'session-storage-fallback' // if you use es6 or typescript
 // use object destructuring when using require()
 // const {storage} = require('local-storage-fallback')
 

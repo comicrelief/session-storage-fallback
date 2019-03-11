@@ -4,10 +4,7 @@ import MemoryStorage from './MemoryStorage'
 
 let storage = null
 
-if (isSupported('localStorage')) {
-  // use localStorage
-  storage = window.localStorage
-} else if (isSupported('sessionStorage')) {
+if (isSupported('sessionStorage')) {
   // use sessionStorage
   storage = window.sessionStorage
 } else if (isSupported('cookieStorage')) {
