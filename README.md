@@ -20,24 +20,15 @@ import storage from 'session-storage-fallback' // if you use es6 or typescript
 storage.setItem('foo', 'bar');
 storage.getItem('foo'); // bar
 
-// Or shim window.localStorage
-if (!('localStorage' in window)) {
-  window.localStorage = storage;
+// Or shim window.sessionStorage
+if (!('sessionStorage' in window)) {
+  window.sessionStorage = storage;
 }
-```
-
-## Browser Bundle
-
-```html
-<script src="https://unpkg.com/local-storage-fallback/lib/dist.min.js"></script>
-<script>
-  window.localStorageFallback.setItem('foo', 'bar')
-</script>
 ```
 
 ## Purpose
 
-With browser settings like "Private Browsing" it has become a problem to rely on a working `window.localStorage`, even in newer browsers. Even though it may exist, it will throw exceptions when trying to use `setItem` or `getItem`. This module will run appropriate checks to see what browser storage mechanism might be available, and then expose it. It uses the same API as `localStorage` so it should work as a drop-in replacement in most cases.
+With browser settings like "Private Browsing" it has become a problem to rely on a working `window.sessionStorage`, even in newer browsers. Even though it may exist, it will throw exceptions when trying to use `setItem` or `getItem`. This module will run appropriate checks to see what browser storage mechanism might be available, and then expose it. It uses the same API as `sessionStorage` so it should work as a drop-in replacement in most cases.
 
 ## Gotchas
 
